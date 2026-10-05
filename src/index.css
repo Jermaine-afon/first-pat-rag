@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tv-black: #131722;
+  --color-tv-grayBg: #f8f9fd;
+  --color-tv-cardBg: #ffffff;
+  --color-tv-border: #e0e3eb;
+  --color-tv-subtle: #787b86;
+  --color-tv-blue: #2962ff;
+  --color-tv-blueHover: #1e53e5;
+  --color-tv-green: #089981;
+  --color-tv-greenBg: #e6f7f4;
+  --color-tv-red: #f23645;
+  --color-tv-redBg: #feecee;
+  --color-tv-lightHover: #f0f3fa;
+  --color-tv-pillBg: #f0f3fa;
+}
+
+/* Custom Financial Typography & Scrollbar helpers */
+.tabular-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tv-btn-gradient {
+  background: linear-gradient(90deg, #2962ff 0%, #7c3aed 100%);
+}
+
+.tv-nav-link:hover {
+  color: #2962ff;
+}
+
+/* Flash animation for live price updates */
+@keyframes flash-green {
+  0% { background-color: rgba(8, 153, 129, 0.35); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flash-red {
+  0% { background-color: rgba(242, 54, 69, 0.35); }
+  100% { background-color: transparent; }
+}
+
+.animate-flash-green {
+  animation: flash-green 1s ease-out;
+}
+
+.animate-flash-red {
+  animation: flash-red 1s ease-out;
+}

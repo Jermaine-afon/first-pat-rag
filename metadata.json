@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets",
+  "description": "TradingView Global Financial Markets overview tracking live indices, US stocks, crypto, commodities, and economic calendar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
